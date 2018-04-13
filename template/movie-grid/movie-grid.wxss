@@ -1,0 +1,17 @@
+@import '/template/movie-item/movie-item.wxss';
+@import '/app.wxss';
+
+.movie-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20rpx 0;
+}
+.movie-grid .movie-item-wrap {
+  flex: 0 0 220rpx;
+  margin: 0 20rpx 20rpx 0; 
+}
+
+.movie-grid .movie-item-wrap:nth-child(3n) {
+  margin-right: 0;
+}

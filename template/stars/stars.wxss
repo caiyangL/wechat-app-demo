@@ -1,0 +1,8 @@
+.stars-wrap {
+    display: flex;
+}
+
+.stars-wrap image {
+    width: 20rpx;
+    height: 20rpx;
+}

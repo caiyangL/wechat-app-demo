@@ -1,0 +1,15 @@
+<import src="/template/movie-item/movie-item.wxml"></import>
+
+<template name="movie-list">
+    <view class="movie-list-wrap">
+        <view class="list-head">
+            <text class="list-title">{{title}}</text>
+            <view class="list-more" data-list-type="{{title}}" bind:tap="onMoreHandle">更多 ></view>
+        </view>
+        <view class="list-wrap">
+            <block wx:for="{{movieList}}" wx:for-item="movie" wx:key="{{movie.id}}">
+                <template is="movie-item" data="{{...movie}}"></template>
+            </block>
+        </view>
+    </view>
+</template>

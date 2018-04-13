@@ -1,0 +1,36 @@
+{
+    "pages":[
+        "pages/welcome/welcome",
+        "pages/read/read",
+        "pages/read/read-detail/read-detail",
+        "pages/movie/movie",
+        "pages/movie-detail/movie-detail",
+        "pages/movie-more/movie-more"
+    ],
+    "window": {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTextStyle": "black",
+      "navigationBarTitleText": "阅读和电影",
+      "backgroundColor": "#eeeeee",
+      "backgroundTextStyle": "light",
+      "enablePullDownRefresh": false
+    },
+    "tabBar": {
+        "selectedColor": "#1f4ba5",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/read/read",
+                "text": "阅读",
+                "iconPath": "images/tab/yuedu.png",
+                "selectedIconPath": "images/tab/yuedu_hl.png"
+            },
+            {
+                "pagePath": "pages/movie/movie",
+                "text": "电影",
+                "iconPath": "images/tab/dianying.png",
+                "selectedIconPath": "images/tab/dianying_hl.png"
+            }
+        ]
+    }
+}

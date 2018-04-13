@@ -1,0 +1,16 @@
+<import src="/template/stars/stars.wxml"></import>
+
+<template name="movie-item">
+    <view class="movie-item-wrap" catchtap="onMovieTap" data-movie-id="{{id}}">
+        <view class="movie-banner">
+            <image src="{{banner}}"></image>
+        </view>
+        <view class="movie-title">
+            <text>{{title}}</text>
+        </view>
+        <view class="grade">
+            <template is="stars" data="{{stars}}"></template>
+            <text class="grade-text">{{average}}</text>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,71 @@
+.read-swiper {
+    width: 100%;
+    height: 500rpx;
+}
+.read-swiper-item-img {
+    width: 100%;
+    height: 100%;
+}
+
+.read-list-wrap>.read-item {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top: 10rpx;
+}
+/* 头部 */
+.read-list-wrap>.read-item>.item-head {
+    height: 80rpx;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10rpx;
+    padding: 0 10rpx;
+}
+.read-list-wrap>.read-item>.item-head>image {
+    width: 60rpx;
+    height: 60rpx;
+    margin-right: 20rpx;
+}
+.read-list-wrap>.read-item>.item-head>.item-date {
+    font-size: 12px
+}
+
+.read-list-wrap>.read-item>.item-title {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10rpx;
+    margin-bottom: 10rpx;
+}
+
+.read-list-wrap>.read-item>.item-banner {
+    margin-bottom: 10rpx;
+}
+.read-list-wrap>.read-item>.item-banner>image {
+    width: 100%;
+    display: block;
+}
+
+.read-list-wrap>.read-item>.item-summary {
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10rpx;
+}
+
+.read-list-wrap>.read-item>.item-foot {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 10rpx;
+}
+.read-list-wrap>.read-item>.item-foot>.item-collect {
+    margin-right: 10rpx;
+}
+.read-list-wrap>.read-item>.item-foot>.item-collect>image, .read-list-wrap>.read-item>.item-foot>.item-watch>image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 10rpx;
+    vertical-align: middle;
+}
+.read-list-wrap>.read-item>.item-foot>.item-collect>text, .read-list-wrap>.read-item>.item-foot>.item-watch>text {
+    font-size: 14px;
+}
+

@@ -1,0 +1,23 @@
+<view class="read-detail-wrap">
+    <view class="head-img">
+        <image src="{{isPlayingMusic ? postData.music.coverImg : postData.headImgSrc}}"></image>
+        <view class="head-music" bind:tap="toggleMusicHandle">
+            <image src="{{ isPlayingMusic ? '/images/music/music-stop.png' : '/images/music/music-start.png' }}"></image>
+        </view>
+    </view>
+    <view class="content-baseinfo">
+        <image src="{{postData.avatar}}"></image>
+        <text class="author">{{postData.author}}</text>
+        <text>发表于</text>
+        <text class="date">{{postData.dateTime}}</text>
+    </view>
+    <view class="content-title">{{postData.title}}</view>
+    <view class="content-action clear-fix">
+        <view class="line"></view>
+        <image src="/images/icon/share.png" class="share" bind:tap="shareHandle"></image>
+        <image src="{{ iscollected ? '/images/icon/collection.png' : '/images/icon/collection-anti.png'}}" class="collection" bind:tap="collectHandle"></image>
+    </view>
+    <view class="content">
+        {{postData.detail}}
+    </view>
+</view>

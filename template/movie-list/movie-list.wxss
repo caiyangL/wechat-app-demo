@@ -1,0 +1,40 @@
+@import '/template/movie-item/movie-item.wxss';
+
+.movie-list-wrap {
+    padding: 20rpx;
+    background-color: #fff;
+}
+
+.movie-list-wrap .list-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.movie-list-wrap .list-title, .movie-list-wrap .list-more {
+    font-size: 14px;
+    line-height: 72rpx;
+}
+
+.movie-list-wrap .list-title {
+    color: #333;
+}
+
+.movie-list-wrap .list-more {
+    color: #7273a6;
+}
+
+.movie-list-wrap .list-wrap {
+    display: flex;
+    overflow-x: scroll; 
+    overflow-y: hidden; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.movie-list-wrap .list-wrap .movie-item-wrap {
+    flex: 0 0 220rpx;
+    margin-right: 20rpx;
+}
+
+.movie-list-wrap .list-wrap .movie-item-wrap:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,7 @@
+<view class="welcome-wrap">
+    <view class="welcome-userInfo">
+        <image class="welcome-wrap-avatar" src="{{userInfo.avatarUrl}}"></image>
+        <text class="welcome-text">Hello,{{userInfo.nickName}}</text>
+    </view>
+    <view class="welcome-enter-btn" bind:tap="_enterPage">进入小程序</view>
+</view>

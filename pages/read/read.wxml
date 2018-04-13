@@ -1,0 +1,34 @@
+<view class="read-wrap">
+    <swiper class="read-swiper" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" circular="{{true}}">
+        <swiper-item wx:for="{{swiperImgList}}" wx:key="*this">
+            <image class="read-swiper-item-img" src="{{item}}"></image>
+        </swiper-item>
+    </swiper>
+    <view class="read-list-wrap">
+        <view class="read-item" wx:for="{{postsListData}}" wx:key="{{item.postId}}" data-post-id="{{item.postId}}" bind:tap="tapPostHandle">
+            <view class="item-head">
+                 <image src="{{item.avatar}}"></image>
+                 <text class="item-date">{{item.date}}</text>
+            </view>
+            <view class="item-title">
+                <text>{{item.title}}</text>
+            </view>
+            <view class="item-banner">
+                <image src="{{item.imgSrc}}"></image>
+            </view>
+            <view class="item-summary">
+                <text>{{item.content}}</text>
+            </view>
+            <view class="item-foot">
+                <view class="item-collect">
+                    <image src="/images/icon/chat.png" class="collect-icon"></image>
+                    <text class="collect-text">{{item.collection}}</text>
+                </view>
+                <view class="item-watch">
+                    <image src="/images/icon/view.png" class="watch-icon"></image>
+                    <text class="watch-text">{{item.reading}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

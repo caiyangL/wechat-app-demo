@@ -1,0 +1,11 @@
+<import src="/template/movie-grid/movie-grid"></import>
+
+<scroll-view 
+  class='movie-more-wrap'
+  scroll-y="true"
+  scroll-x="false"
+  enable-back-to-top="true"
+  bindscrolltolower="onScrollToLower"
+>
+  <template is="movie-grid" data="{{movieGrid: moreMovieList}}"></template>
+</scroll-view>

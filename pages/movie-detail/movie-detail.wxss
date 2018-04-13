@@ -1,0 +1,134 @@
+@import '/template/stars/stars.wxss';
+
+.detail-head {
+  position: relative;
+}
+
+.head-bg {
+  width: 100%;
+  height: 400rpx;
+  filter: blur(10px);
+}
+
+.head-banner {
+  width: 26%;
+  position: absolute;
+  right: 60rpx;
+  top: 200rpx;
+}
+
+.head-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 60rpx 40rpx;
+  color: #fff;
+}
+
+.head-title {
+  margin-bottom: 40rpx;
+  font-size: 26px;
+  letter-spacing: 6rpx;
+}
+
+.head-area-date {
+  margin-bottom: 80rpx;
+}
+
+.head-rating {
+  font-size: 16px;
+}
+
+.head-count {
+  color: red;
+  margin-right: 10rpx;
+}
+
+.head-label {
+  color: #999;
+  margin-right: 40rpx;
+}
+
+.block {
+  padding: 60rpx 40rpx;
+  border-bottom: 1rpx solid #e5e5e5;
+}
+
+.detail-basic {
+  font-size: 14px;
+}
+
+.detail-basic .basic-aka {
+  display: block;
+  width: 50%;
+  margin-bottom: 40rpx;
+  font-weight: bold;
+  color: #666;
+  word-wrap: break-word;
+}
+
+.detail-basic .basic-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 14rpx;
+}
+
+.detail-basic .basic-label {
+  width: 80rpx;
+  margin-right: 20rpx;
+  color: #a8a8a8;
+}
+
+.detail-basic .basic-value {
+  flex: 1;
+  color: #808080;
+  letter-spacing: 6rpx;
+}
+
+.detail-summary {
+  font-size: 14px;
+}
+.detail-summary .summary-title {
+  color: #c7c7c7;
+  margin-bottom: 30rpx;
+}
+.detail-summary .summary-content {
+  color: #727272;
+  letter-spacing: 4rpx;
+  line-height: 26px;
+}
+
+.detail-casts {
+  font-size: 14px;
+}
+.detail-casts .casts-title {
+  color: #c7c7c7;
+}
+.detail-casts .casts-scroll {
+  width:100%;
+  margin-top: 30rpx;
+  white-space: nowrap;
+}
+.detail-casts .cast {
+  display: inline-flex;
+  flex-direction: column;
+  width: 220rpx;
+  margin-right: 30rpx;
+}
+.detail-casts .cast:last-child {
+  margin-right: 0;
+}
+.detail-casts .cast image {
+  width: 100%;
+  height: 320rpx;
+  margin-bottom: 10rpx;
+}
+.detail-casts .cast text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  word-spacing: normal;
+}
+

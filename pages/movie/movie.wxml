@@ -1,0 +1,34 @@
+<import src="/template/movie-list/movie-list.wxml"></import>
+<import src="/template/movie-grid/movie-grid.wxml"></import>
+
+<view class="movie-wrap">
+    <view class="movie-search">
+      <icon type="search" size="20" color="#7d8a92"></icon>
+      <input
+        class="search-input"
+        type="text"
+        placeholder="搜索关键字..."
+        placeholder-class="placeholder"
+        bindfocus="openSearch"
+        bindconfirm="searchHandle"
+        value="{{searchMovieName}}"
+      ></input>
+      <icon type="clear" class="clear-input" size="20" hidden="{{hideSearch}}" bindtap="closeSearch"></icon>
+    </view>
+    
+    <template is="movie-list" data="{{...inTheatersData}}"></template>
+    <template is="movie-list" data="{{...comingSoonData}}"></template>
+    <template is="movie-list" data="{{...top250Data}}"></template>
+
+    <view class="search-movie-list" hidden="{{hideSearch}}">
+      <scroll-view
+        class="search-movie-scroll"
+        scroll-y="true"
+        scroll-x="false"
+        enable-back-to-top="true"
+        bindscrolltolower="onScrollToLower"
+      >
+        <template is="movie-grid" data="{{movieGrid: searchMovieList}}"></template>
+      </scroll-view>
+    </view>
+</view>

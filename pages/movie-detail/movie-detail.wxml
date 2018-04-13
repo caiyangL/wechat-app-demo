@@ -1,0 +1,60 @@
+<import src="/template/stars/stars.wxml"></import>
+
+<view class="movie-detail-wrap">
+  <view class="detail-head">
+    <image class="head-bg" src="{{movieDetail.image}}" mode="aspectFill"></image>
+    <image class="head-banner" bindtap="onPreview" data-src="{{movieDetail.image}}" src="{{movieDetail.image}}" mode="widthFix"></image>
+    <view class="head-content">
+      <text class="head-title">{{movieDetail.title}}</text>
+      <text class="head-area-date">{{movieDetail.areaAndDate}}</text>
+      <view class="head-rating">
+        <text class="head-count">{{movieDetail.ratings_count}}</text>
+        <text class="head-label">人评价</text>
+        <text class="head-count">{{movieDetail.comments_count}}</text>
+        <text class="head-label">条短评</text>
+      </view>
+    </view>
+
+  </view>
+  <view class="detail-basic block">
+    <text class="basic-aka">{{movieDetail.aka}}</text>
+    <view class="basic-line">
+      <text class="basic-label">评分</text>
+      <template is="stars" data="{{stars: movieDetail.stars}}"></template>
+      <text class="basic-value" style="margin-left: 20rpx">{{movieDetail.average}}</text>
+    </view>
+    <view class="basic-line">
+      <text class="basic-label">导演</text>
+      <template is="stars" data="{{stars}}"></template>
+      <text class="basic-value">{{movieDetail.directors}}</text>
+    </view>
+    <view class="basic-line">
+      <text class="basic-label">影人</text>
+      <template is="stars" data="{{stars}}"></template>
+      <text class="basic-value">{{movieDetail.castsStr}}</text>
+    </view>
+    <view class="basic-line">
+      <text class="basic-label">类型</text>
+      <template is="stars" data="{{stars}}"></template>
+      <text class="basic-value">{{movieDetail.genres}}</text>
+    </view>
+  </view>
+  <view class="detail-summary block">
+    <view class="summary-title">剧情简介</view>
+    <text class="summary-content">{{movieDetail.summary}}</text>
+  </view>
+  <view class="detail-casts block">
+    <text class="casts-title">影人</text>
+    <scroll-view 
+      class="casts-scroll"
+      scroll-x="{{true}}"
+      scroll-y="{{false}}"
+    >
+      <view class="cast" wx:for="{{movieDetail.casts}}" wx:for-item="cast" wx:key="{{cast.name}}">
+        <image src="{{cast.avatar}}" data-src="{{cast.avatar}}" bindtap="onPreview" mode="aspectFit"></image>
+        <text>{{cast.name}}</text>
+      </view>
+    </scroll-view>
+  </view>
+  
+</view>

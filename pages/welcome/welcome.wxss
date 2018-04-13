@@ -1,0 +1,36 @@
+page {
+    background-color: #b1d1dd;
+}
+
+.welcome-wrap {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.welcome-userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-wrap-avatar {
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 50%;
+    margin-bottom: 80rpx;
+    border: 1px solid #668398;
+}
+
+.welcome-enter-btn {
+    width: 200rpx;
+    height: 60rpx;
+    margin: 80rpx auto 0;
+    border: 1px solid #668398;
+    border-radius: 10rpx;
+    font-size: 14px;
+    text-align: center;
+    line-height: 60rpx;
+    color: #668398;
+}

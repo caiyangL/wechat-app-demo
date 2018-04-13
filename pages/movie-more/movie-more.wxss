@@ -1,0 +1,5 @@
+@import '/template/movie-grid/movie-grid.wxss';
+
+.movie-more-wrap {
+  height: 1200rpx;
+}
